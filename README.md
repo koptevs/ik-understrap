@@ -38,6 +38,9 @@ Install Wordpress and plugins.
 $ composer require johnpbloch/wordpress
 $ composer require wpackagist-plugin/advanced-custom-fields
 ```
+... repeat for every needed plugin.
+
+
 Final composer.json:
 ```shell
 {

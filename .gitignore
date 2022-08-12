@@ -53,6 +53,6 @@ dist/
 dist-product/
 **/img
 
-#/src/sass/assets/
-#/css/
-#/js/
+/src/sass/assets/
+/css/
+/js/

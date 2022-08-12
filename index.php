@@ -34,12 +34,14 @@ $container = 'container';
 
                 <main class="site-main" id="main">
 
+
 					<?php
 					if ( have_posts() ) {
 						// Start the Loop.
 						while ( have_posts() ) {
-							the_post();
-							/*
+							the_post(); ?>
+							<div class="btn btn-info"><?php the_title(); ?></div>
+							<?php /*
 							 * Include the Post-Format-specific template for the content.
 							 * If you want to override this in a child theme, then include a file
 							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.

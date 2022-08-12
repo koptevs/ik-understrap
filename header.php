@@ -10,10 +10,12 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-//$bootstrap_version = get_theme_mod( 'understrap_bootstrap_version', 'bootstrap4' );
 //$navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
+//$navbar_type = 'collapse-fixed';
 //$navbar_type = 'collapse';
 $navbar_type = 'offcanvas';
+$navbar_fixed = false;
+//$navbar_fixed = true;
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -30,10 +32,15 @@ $navbar_type = 'offcanvas';
 <div class="site" id="page">
 
     <!-- ******************* The Navbar Area ******************* -->
-    <header id="wrapper-navbar">
+    <header id="wrapper-navbar" class="<?php echo $navbar_fixed ? 'fixed-top' : '' ?>">
+<!--                    <header id="wrapper-navbar">-->
+        <a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content',
+				'ikunderstrap' ); ?></a>
+		<?php get_template_part( 'global-templates/navbar', $navbar_type ); ?>
 
-        <a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'ikunderstrap' ); ?></a>
 
-<!--		--><?php //get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
-
+        <!--		--><?php //get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
     </header><!-- #wrapper-navbar end -->
+    <?php if ($navbar_fixed) : ?>
+        <div style="padding-top: 56px;"></div>
+    <?php endif; ?>

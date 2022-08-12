@@ -30,6 +30,7 @@ if ( ! function_exists( 'ikunderstrap_scripts' ) ) {
 		$css_version = $theme_version . '.' . filemtime( get_template_directory() . $theme_styles );
 		wp_enqueue_style( 'ikunderstrap-styles', get_template_directory_uri() . $theme_styles, array(), $css_version );
 		wp_enqueue_style( 'ikunderstrap-fonts', "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" );
+		wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 
 //		wp_enqueue_script( 'jquery' );
 

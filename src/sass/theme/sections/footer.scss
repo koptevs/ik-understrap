@@ -1,0 +1,23 @@
+.footer {
+
+  &-wrapper {
+    padding-top: 2.75rem;
+    padding-bottom: 3.75rem;
+    background-color: #323232;
+
+    h3 {
+      color: #cecece;
+    }
+  }
+
+  &-menu {
+    li {
+      margin-bottom: 0.5rem;
+
+      a {
+        text-decoration: none;
+        color: #eeeeee !important;
+      }
+    }
+  }
+}

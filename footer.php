@@ -16,25 +16,43 @@ $container = 'container';
 
 <?php //get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper" id="wrapper-footer">
+<div class="wrapper footer-wrapper" id="wrapper-footer">
 
     <div class="<?php echo esc_attr( $container ); ?>">
 
         <div class="row">
+            <div class="col-12 col-md-4 ">
+                <h3 class="text-center mb-4 text-uppercase">Col 1</h3>
+                <nav>
+					<?php wp_nav_menu( array(
+						'theme_location' => 'footer-menu_column-1',
+						'menu_class'     => 'nav flex-column footer-menu text-center',
 
-            <div class="col-md-12">
+					) ) ?>
+                </nav>
+            </div>
 
-                <footer class="site-footer" id="colophon">
+            <div class="col-12 col-md-4 ">
+                <h3 class="text-center mb-4 text-uppercase">Col 2</h3>
+                <nav>
+					<?php wp_nav_menu( array(
+						'theme_location' => 'footer-menu_column-2',
+						'menu_class'     => 'nav flex-column footer-menu text-center',
 
-                    <div class="site-info">
-                        <h3>Footer</h3> <!-- ik -->
-<!--						--><?php //understrap_site_info(); ?>
+					) ) ?>
+                </nav>
+            </div>
+            <div class="col-12 col-md-4 ">
+                <h3 class="text-center mb-4 text-uppercase">Col 3</h3>
+                <nav>
+					<?php wp_nav_menu( array(
+						'theme_location' => 'footer-menu_column-3',
+						'menu_class'     => 'nav flex-column footer-menu text-center',
+					) ) ?>
+                </nav>
+            </div>
 
-                    </div><!-- .site-info -->
 
-                </footer><!-- #colophon -->
-
-            </div><!--col end -->
 
         </div><!-- row end -->
 

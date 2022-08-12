@@ -46,7 +46,10 @@ if ( ! function_exists( 'ikunderstrap_setup' ) ) {
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'primary' => __( 'Primary Menu', 'ikunderstrap' ),
+				'primary'              => __( 'Primary Menu', 'ikunderstrap' ),
+				'footer-menu_column-1' => __( 'Footer Menu Column 1', 'ikunderstrap' ),
+				'footer-menu_column-2' => __( 'Footer Menu Column 2', 'ikunderstrap' ),
+				'footer-menu_column-3' => __( 'Footer Menu Column 3', 'ikunderstrap' ),
 			)
 		);
 

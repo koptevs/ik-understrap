@@ -42,12 +42,12 @@ $container = 'container';
 					) ) ?>
                 </nav>
             </div>
-            <div class="col-12 col-md-4 ">
+            <div class="col-12 col-md-4">
                 <h3 class="text-center mb-4 text-uppercase">Col 3</h3>
                 <nav>
 					<?php wp_nav_menu( array(
 						'theme_location' => 'footer-menu_column-3',
-						'menu_class'     => 'nav flex-column footer-menu text-center',
+						'menu_class'     => 'nav flex-column footer-menu',
 					) ) ?>
                 </nav>
             </div>

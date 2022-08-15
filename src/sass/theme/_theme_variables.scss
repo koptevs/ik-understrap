@@ -11,3 +11,22 @@
 //$body-color: #777;
 
 
+// ---> NAVBAR <------
+$navbar-background-color-theme: rgba(40, 58, 90, 0.9);
+$navbar-box-shadow-theme: rgba(0, 0, 0, 0.1) 0px 7px 10px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+$navbar-link-color-theme: rgba(white, 0.7);
+$navbar-link-hover-color-theme: white;
+
+$navbar-link-active-color-theme: white;
+$navbar-link-active-hover-color-theme: rgba(white, 0.9);
+
+$navbar-toggler-outline-color-theme: rgba(white, 0.3);
+$navbar-toggler-outline-hover-color-theme: rgba(white, 0.4);
+
+$navbar-toggler-active-box-shadow-color-theme: $navbar-toggler-outline-hover-color-theme;
+
+$navbar-toggler-icon-color-theme: rgba(white, 0.3);
+$navbar-toggler-icon-hover-color-theme: rgba(white, 0.4);
+
+$navbar-mobile-dropdown-background-color: rgba(40, 58, 90, .9);

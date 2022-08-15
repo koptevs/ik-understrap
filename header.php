@@ -11,11 +11,11 @@
 defined( 'ABSPATH' ) || exit;
 
 //$navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
-//$navbar_type = 'collapse-fixed';
+$navbar_type = 'collapse-fixed';
 //$navbar_type = 'collapse';
 $navbar_type = 'offcanvas';
-$navbar_fixed = false;
-//$navbar_fixed = true;
+$navbar_fixed = true;
+//$navbar_fixed = false;
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -42,5 +42,6 @@ $navbar_fixed = false;
         <!--		--><?php //get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
     </header><!-- #wrapper-navbar end -->
     <?php if ($navbar_fixed) : ?>
-        <div style="padding-top: 56px;"></div>
+<!--        <div style="padding-top: 56px;"></div>-->
+        <div style="padding-top: 70px;"></div>
     <?php endif; ?>

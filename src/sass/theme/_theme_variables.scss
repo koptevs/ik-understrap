@@ -9,7 +9,7 @@
 
 //$body-bg: #000;
 //$body-color: #777;
-
+$navbar-brand-color: #ff0000;
 
 // ---> NAVBAR <------
 $navbar-background-color-theme: rgba(40, 58, 90, 0.9);
@@ -30,3 +30,10 @@ $navbar-toggler-icon-color-theme: rgba(white, 0.3);
 $navbar-toggler-icon-hover-color-theme: rgba(white, 0.4);
 
 $navbar-mobile-dropdown-background-color: rgba(40, 58, 90, .9);
+
+// ------> HERO SECTION <-------------
+
+$hero-watch-video-text-color: rgba(white, 0.8);
+$hero-watch-video-text-hover-color: white;
+$hero-watch-video-icon-color: rgba(white, 0.8);
+$hero-watch-video-icon-hover-color: white;

@@ -1,6 +1,16 @@
 @import "../theme_variables";
 
 //.navbar {
+
+.navbar-brand {
+  transition: all 0.3s ease;
+  color: $navbar-link-color-theme;
+
+  &:hover {
+    color: $navbar-link-hover-color-theme;
+  }
+}
+
 #wrapper-navbar {
   transition: all 0.5s;
   z-index: 997;

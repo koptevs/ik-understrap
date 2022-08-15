@@ -41,7 +41,6 @@ $navbar_fixed = true;
 
         <!--		--><?php //get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
     </header><!-- #wrapper-navbar end -->
-    <?php if ($navbar_fixed) : ?>
-<!--        <div style="padding-top: 56px;"></div>-->
-        <div style="padding-top: 70px;"></div>
+    <?php if (!$navbar_fixed) : ?>
+        <div style="margin-top: -70px;"></div>
     <?php endif; ?>

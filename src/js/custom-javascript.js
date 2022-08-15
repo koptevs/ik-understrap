@@ -5,6 +5,8 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
+
+import GLightbox from 'glightbox';
 (function () {
     "use strict";
 
@@ -61,9 +63,9 @@
     /**
      * Initiate  glightbox
      */
-    // const glightbox = GLightbox({
-    //     selector: '.glightbox'
-    // });
+    const glightbox = GLightbox({
+        selector: '.glightbox'
+    });
 
 
 })()

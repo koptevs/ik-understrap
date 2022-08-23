@@ -32,7 +32,11 @@ $navbar_fixed = true;
 <div class="site" id="page">
 
     <!-- ******************* The Navbar Area ******************* -->
-    <header id="wrapper-navbar" class="<?php echo $navbar_fixed ? 'fixed-top' : '' ?>">
+    <?php if ( is_front_page() ) : ?>
+        <header id="wrapper-navbar" class="<?php echo $navbar_fixed ? 'fixed-top' : '' ?>">
+    <?php else: ?>
+        <header id="wrapper-navbar" class="<?php echo $navbar_fixed ? 'fixed-top header-inner' : '' ?>">
+    <?php endif; ?>
 <!--                    <header id="wrapper-navbar">-->
         <a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content',
 				'ikunderstrap' ); ?></a>
@@ -42,5 +46,8 @@ $navbar_fixed = true;
         <!--		--><?php //get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
     </header><!-- #wrapper-navbar end -->
     <?php if (!$navbar_fixed) : ?>
-        <div style="margin-top: -70px;"></div>
+        <div style="margin-top: -72px;"></div>
     <?php endif; ?>
+<?php if ( !is_front_page() ) : ?>
+        <div  style="margin-top: 72px;"></div>
+<?php endif; ?>

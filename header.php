@@ -11,7 +11,6 @@
 defined( 'ABSPATH' ) || exit;
 
 //$navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
-$navbar_type = 'collapse-fixed';
 //$navbar_type = 'collapse';
 $navbar_type = 'offcanvas';
 $navbar_fixed = true;
@@ -28,14 +27,14 @@ $navbar_fixed = true;
 
 <!--<body --><?php //body_class(); ?><!-- --><?php //understrap_body_attributes(); ?><!-- -->
 <body <?php body_class(); ?>>
-<?php do_action( 'wp_body_open' ); ?>
+<?php //do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 
     <!-- ******************* The Navbar Area ******************* -->
     <?php if ( is_front_page() ) : ?>
         <header id="wrapper-navbar" class="<?php echo $navbar_fixed ? 'fixed-top' : '' ?>">
     <?php else: ?>
-        <header id="wrapper-navbar" class="<?php echo $navbar_fixed ? 'fixed-top header-inner' : '' ?>">
+        <header id="wrapper-navbar" class="<?php echo $navbar_fixed ? 'fixed-top header-inner' : 'header-inner' ?>">
     <?php endif; ?>
 <!--                    <header id="wrapper-navbar">-->
         <a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content',
@@ -44,10 +43,12 @@ $navbar_fixed = true;
 
 
         <!--		--><?php //get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
-    </header><!-- #wrapper-navbar end -->
-    <?php if (!$navbar_fixed) : ?>
-        <div style="margin-top: -72px;"></div>
-    <?php endif; ?>
+</header><!-- #wrapper-navbar end -->
+
+<?php if (!$navbar_fixed) : ?>
+    <div style="margin-top: -72px;"></div>
+<?php endif; ?>
+
 <?php if ( !is_front_page() ) : ?>
-        <div  style="margin-top: 72px;"></div>
+    <div  style="margin-top: 72px;"></div>
 <?php endif; ?>

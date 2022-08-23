@@ -33,8 +33,9 @@ $container = 'container';
 				</div> <!-- .col -->
 			</div> <!-- .row -->
 			<div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-				<img src="<?php echo get_template_directory_uri() . '/img/hero-img.png' ?>"
-				     class="img-fluid animated" alt="">
+<!--				<img src="--><?php //echo get_template_directory_uri() . '/img/hero-img.png' ?><!--" class="img-fluid animated" alt="Hero image">-->
+				<img src="<?php echo get_theme_file_uri('/img/hero-img.png') ?> "class="img-fluid animated" alt="Hero image">
+
 			</div>
 		</div>
 	</div>

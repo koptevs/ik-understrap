@@ -7,6 +7,7 @@
  */
 
 import GLightbox from 'glightbox';
+
 (function () {
     "use strict";
 
@@ -59,6 +60,22 @@ import GLightbox from 'glightbox';
         onscroll(document, headerScrolled)
     }
 
+    /**
+     * Back to top button
+     */
+    let backtotop = select('.back-to-top')
+    if (backtotop) {
+        const toggleBacktotop = () => {
+            if (window.scrollY > 100) {
+                backtotop.classList.add('active')
+            } else {
+                backtotop.classList.remove('active')
+            }
+        }
+        window.addEventListener('load', toggleBacktotop)
+        onscroll(document, toggleBacktotop)
+    }
+
 
     /**
      * Initiate  glightbox
@@ -69,4 +86,3 @@ import GLightbox from 'glightbox';
 
 
 })()
-

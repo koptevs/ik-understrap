@@ -35,6 +35,7 @@ if ( ! function_exists( 'ikunderstrap_scripts' ) ) {
 		wp_enqueue_style( 'ikunderstrap-fonts',
 			"https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" );
 		wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+		wp_enqueue_style( 'font-awesome', '//cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css' );
 
 //		wp_enqueue_script( 'jquery' );
 

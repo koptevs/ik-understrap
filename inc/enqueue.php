@@ -23,7 +23,7 @@ if ( ! function_exists( 'ikunderstrap_scripts' ) ) {
 //		wp_die( $suffix );
 		// Grab asset urls.
 		$theme_styles  = "/css/theme{$suffix}.css";
-		$theme_scripts = "/js/theme{$suffix}.js";
+		$theme_scripts = "/js/main{$suffix}.js";
 //		if ( 'bootstrap4' === $bootstrap_version ) {
 //			$theme_styles  = "/css/theme-bootstrap4{$suffix}.css";
 //			$theme_scripts = "/js/theme-bootstrap4{$suffix}.js";
@@ -32,10 +32,13 @@ if ( ! function_exists( 'ikunderstrap_scripts' ) ) {
 		$css_version = $theme_version . '.' . filemtime( get_template_directory() . $theme_styles );
 //		wp_die($css_version);
 		wp_enqueue_style( 'ikunderstrap-styles', get_template_directory_uri() . $theme_styles, array(), $css_version );
-		wp_enqueue_style( 'ikunderstrap-fonts',
-			"https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" );
+
+
+		wp_enqueue_style( 'ikunderstrap-font-open-sans', "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" );
+		wp_enqueue_style( 'ikunderstrap-font-jost', "https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" );
+
 		wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
-		wp_enqueue_style( 'font-awesome', '//cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css' );
+		wp_enqueue_style( 'font-bs', '//cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css' );
 
 //		wp_enqueue_script( 'jquery' );
 

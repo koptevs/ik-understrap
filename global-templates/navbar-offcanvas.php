@@ -31,7 +31,7 @@ $container = 'container';
                     <path d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"/>
                     <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                 </svg>
-                <span class="ms-1">
+                <span class="ms-1 navbar-test">
                 <?php bloginfo( 'name' ); ?>
                 </span>
             </a>
@@ -41,7 +41,6 @@ $container = 'container';
 		}
 		?>
         <!-- end custom logo -->
-
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavOffcanvas"
                 aria-controls="navbarNavOffcanvas" aria-expanded="false"
                 aria-label="<?php esc_attr_e( 'Toggle navigation', 'ikunderstrap' ); ?>">
@@ -65,7 +64,7 @@ $container = 'container';
 					'menu_class'      => 'navbar-nav justify-content-end flex-grow-1 pe-3',
 					'fallback_cb'     => '',
 					'menu_id'         => 'main-menu',
-					'depth'           => 2,
+					'depth'           => 3,
 					'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 				)
 			);

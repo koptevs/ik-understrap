@@ -64,7 +64,6 @@ $container = 'container';
                 <a href="#" class="btn-social btn-codepen"><i class="fa fa-codepen"></i></a>
                 <a href="#" class="btn-social btn-dribbble"><i class="fa fa-dribbble"></i></a>
                 <a href="#" class="btn-social btn-dropbox"><i class="fa fa-dropbox"></i></a>
-                <a href="#" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>
                 <a href="#" class="btn-social btn-flickr"><i class="fa fa-flickr"></i></a>
                 <a href="#" class="btn-social btn-github"><i class="fa fa-github-alt"></i></a>
                 <a href="#" class="btn-social btn-google-plus"><i class="fa fa-google-plus"></i></a>
@@ -77,6 +76,8 @@ $container = 'container';
                 <a href="#" class="btn-social btn-wordpress"><i class="fa fa-wordpress"></i></a>
                 <a href="#" class="btn-social btn-youtube"><i class="fa fa-youtube"></i></a>
                 <a href="#" class="btn-social btn-email"><i class="fa fa-envelope"></i></a>
+                <a href="#" class="btn-social btn-bitbucket"><i class="bi-alarm"></i></a>
+                <a href="#" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>
             </div>
             <div class="text-center pt-4">
                 <button type="button" class="btn btn-danger" style="width: 120px;">

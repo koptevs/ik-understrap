@@ -2,18 +2,18 @@
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/bootstrap4/_hero-variables.scss, paste it here and edit the value.
 
-
 //$purple: #223377; // Thats a sample how you could change a BootStrap variable.
 //$primary: $purple;  // Once we've changed the value, we'll also make it the primary brand color.
 
-
 //$body-bg: #000;
 //$body-color: #777;
-
-
+$iky: mix(black, rgba(40, 58, 90, 0.9), 20);
+$pagination-bg: transparent;
+$pagination-active-bg: $iky;
 // ---> NAVBAR <------
 $navbar-background-color-theme: rgba(40, 58, 90, 0.9);
-$navbar-box-shadow-theme: rgba(0, 0, 0, 0.1) 0px 7px 10px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+$navbar-box-shadow-theme: rgba(0, 0, 0, 0.1) 0px 7px 10px -3px,
+  rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
 $navbar-link-color-theme: rgba(white, 0.7);
 $navbar-link-hover-color-theme: white;
@@ -32,7 +32,7 @@ $navbar-toggler-active-box-shadow-color-theme: $navbar-toggler-outline-hover-col
 $navbar-toggler-icon-color-theme: rgba(white, 0.3);
 $navbar-toggler-icon-hover-color-theme: rgba(white, 0.4);
 
-$navbar-mobile-dropdown-background-color: rgba(40, 58, 90, .9);
+$navbar-mobile-dropdown-background-color: rgba(40, 58, 90, 0.9);
 
 // ------> HERO SECTION <-------------
 

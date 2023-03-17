@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file
  *
@@ -16,53 +17,61 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 $container = 'container';
-//$container = get_theme_mod( 'ikunderstrap_container_type' );
+// $container = get_theme_mod( 'ikunderstrap_container_type' );
 ?>
 
 <?php if ( is_front_page() ) : ?>
 	<?php get_template_part( 'global-templates/hero' ); ?>
 <?php endif; ?>
 
-    <div class="wrapper" id="index-wrapper">
+	<div class="wrapper" id="index-wrapper">
 
-        <div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+		<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
-            <div class="row">
+			<div class="row">
 
-                <main class="site-main" id="main">
-
+				<main class="site-main" id="main">
 
 					<?php
 					if ( have_posts() ) {
 						// Start the Loop.
 						while ( have_posts() ) {
-							the_post(); ?>
-                            <h1><?php the_title() ?></h1>
-                            <p><?php the_content(); ?></p>
-							<?php /*
-							 * Include the Post-Format-specific template for the content.
-							 * If you want to override this in a child theme, then include a file
-							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-							 */
-//							get_template_part( 'loop-templates/content', get_post_format() );
+							the_post();
+							?>
+							<h1><?php the_title(); ?></h1>
+							<p><?php the_content(); ?></p>
+							<?php
+							/*
+								 * Include the Post-Format-specific template for the content.
+								 * If you want to override this in a child theme, then include a file
+								 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+								 */
+							// get_template_part( 'loop-templates/content', get_post_format() );
 						}
 					} else {
-//						get_template_part( 'loop-templates/content', 'none' );
+						echo 'No content found.';
+						// get_template_part( 'loop-templates/content', 'none' );
 					}
 					?>
-                </main><!-- #main -->
+				</main><!-- #main -->
 
-                <!-- The pagination component -->
-                <!--				--><?php //understrap_pagination(); ?>
+				<!-- The pagination component -->
+				<!--                -->
+				<?php
+				// understrap_pagination();
+				?>
 
-                <!-- Do the right sidebar check -->
-                <!--				--><?php //get_template_part( 'global-templates/right-sidebar-check' ); ?>
+				<!-- Do the right sidebar check -->
+				<!--                -->
+				<?php
+				// get_template_part( 'global-templates/right-sidebar-check' );
+				?>
 
-            </div><!-- .row -->
+			</div><!-- .row -->
 
-        </div><!-- #content -->
+		</div><!-- #content -->
 
-    </div><!-- #index-wrapper -->
+	</div><!-- #index-wrapper -->
 
 <?php
 get_footer();
